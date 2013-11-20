@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		4E52D5B9183D27EE00F0B529 /* CHANGELOG.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.rst; sourceTree = "<group>"; };
+		4E52D5BA183D27EE00F0B529 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		4E52D5BC183D27EE00F0B529 /* .thunderbots.dic.swp */ = {isa = PBXFileReference; lastKnownFileType = file; path = .thunderbots.dic.swp; sourceTree = "<group>"; };
+		4E52D5BD183D27EE00F0B529 /* robocup.corpus */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = robocup.corpus; sourceTree = "<group>"; };
+		4E52D5BE183D27EE00F0B529 /* robocup.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = robocup.dic; sourceTree = "<group>"; };
+		4E52D5BF183D27EE00F0B529 /* robocup.launch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = robocup.launch; sourceTree = "<group>"; };
+		4E52D5C0183D27EE00F0B529 /* robocup.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = robocup.lm; sourceTree = "<group>"; };
+		4E52D5C1183D27EE00F0B529 /* robocup_r1.launch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = robocup_r1.launch; sourceTree = "<group>"; };
+		4E52D5C2183D27EE00F0B529 /* robocup_r2.launch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = robocup_r2.launch; sourceTree = "<group>"; };
+		4E52D5C3183D27EE00F0B529 /* thunderbots.corpus */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thunderbots.corpus; sourceTree = "<group>"; };
+		4E52D5C4183D27EE00F0B529 /* thunderbots.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thunderbots.dic; sourceTree = "<group>"; };
+		4E52D5C5183D27EE00F0B529 /* turtlebot_voice_cmd.launch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = turtlebot_voice_cmd.launch; sourceTree = "<group>"; };
+		4E52D5C6183D27EE00F0B529 /* voice_cmd.corpus */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = voice_cmd.corpus; sourceTree = "<group>"; };
+		4E52D5C7183D27EE00F0B529 /* voice_cmd.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = voice_cmd.dic; sourceTree = "<group>"; };
+		4E52D5C8183D27EE00F0B529 /* voice_cmd.launch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = voice_cmd.launch; sourceTree = "<group>"; };
+		4E52D5C9183D27EE00F0B529 /* voice_cmd.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = voice_cmd.lm; sourceTree = "<group>"; };
+		4E52D5CB183D27EE00F0B529 /* intentmap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = intentmap.py; sourceTree = "<group>"; };
+		4E52D5CC183D27EE00F0B529 /* intentmap.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = intentmap.pyc; sourceTree = "<group>"; };
+		4E52D5CD183D27EE00F0B529 /* pirobot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pirobot.py; sourceTree = "<group>"; };
+		4E52D5CE183D27EE00F0B529 /* recognizer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = recognizer.py; sourceTree = "<group>"; };
+		4E52D5CF183D27EE00F0B529 /* testFns.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = testFns.py; sourceTree = "<group>"; };
+		4E52D5D0183D27EE00F0B529 /* thunderbots.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = thunderbots.py; sourceTree = "<group>"; };
+		4E52D5D1183D27EE00F0B529 /* voice_cmd_vel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = voice_cmd_vel.py; sourceTree = "<group>"; };
+		4E52D5D2183D27EE00F0B529 /* package.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = package.xml; sourceTree = "<group>"; };
+		4E52D5D3183D27EE00F0B529 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4E52D5AD183D265A00F0B529 = {
+			isa = PBXGroup;
+			children = (
+				4E52D5B9183D27EE00F0B529 /* CHANGELOG.rst */,
+				4E52D5BA183D27EE00F0B529 /* CMakeLists.txt */,
+				4E52D5BB183D27EE00F0B529 /* demo */,
+				4E52D5CA183D27EE00F0B529 /* nodes */,
+				4E52D5D2183D27EE00F0B529 /* package.xml */,
+				4E52D5D3183D27EE00F0B529 /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		4E52D5BB183D27EE00F0B529 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				4E52D5BC183D27EE00F0B529 /* .thunderbots.dic.swp */,
+				4E52D5BD183D27EE00F0B529 /* robocup.corpus */,
+				4E52D5BE183D27EE00F0B529 /* robocup.dic */,
+				4E52D5BF183D27EE00F0B529 /* robocup.launch */,
+				4E52D5C0183D27EE00F0B529 /* robocup.lm */,
+				4E52D5C1183D27EE00F0B529 /* robocup_r1.launch */,
+				4E52D5C2183D27EE00F0B529 /* robocup_r2.launch */,
+				4E52D5C3183D27EE00F0B529 /* thunderbots.corpus */,
+				4E52D5C4183D27EE00F0B529 /* thunderbots.dic */,
+				4E52D5C5183D27EE00F0B529 /* turtlebot_voice_cmd.launch */,
+				4E52D5C6183D27EE00F0B529 /* voice_cmd.corpus */,
+				4E52D5C7183D27EE00F0B529 /* voice_cmd.dic */,
+				4E52D5C8183D27EE00F0B529 /* voice_cmd.launch */,
+				4E52D5C9183D27EE00F0B529 /* voice_cmd.lm */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		4E52D5CA183D27EE00F0B529 /* nodes */ = {
+			isa = PBXGroup;
+			children = (
+				4E52D5CB183D27EE00F0B529 /* intentmap.py */,
+				4E52D5CC183D27EE00F0B529 /* intentmap.pyc */,
+				4E52D5CD183D27EE00F0B529 /* pirobot.py */,
+				4E52D5CE183D27EE00F0B529 /* recognizer.py */,
+				4E52D5CF183D27EE00F0B529 /* testFns.py */,
+				4E52D5D0183D27EE00F0B529 /* thunderbots.py */,
+				4E52D5D1183D27EE00F0B529 /* voice_cmd_vel.py */,
+			);
+			path = nodes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		4E52D5B2183D265A00F0B529 /* pocketsphinx */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 4E52D5B5183D265A00F0B529 /* Build configuration list for PBXLegacyTarget "pocketsphinx" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/python;
+			dependencies = (
+			);
+			name = pocketsphinx;
+			passBuildSettingsInEnvironment = 1;
+			productName = pocketsphinx;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		4E52D5AE183D265A00F0B529 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = bucci;
+			};
+			buildConfigurationList = 4E52D5B1183D265A00F0B529 /* Build configuration list for PBXProject "pocketsphinx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4E52D5AD183D265A00F0B529;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E52D5B2183D265A00F0B529 /* pocketsphinx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		4E52D5B3183D265A00F0B529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4E52D5B4183D265A00F0B529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4E52D5B6183D265A00F0B529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4E52D5B7183D265A00F0B529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E52D5B1183D265A00F0B529 /* Build configuration list for PBXProject "pocketsphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E52D5B3183D265A00F0B529 /* Debug */,
+				4E52D5B4183D265A00F0B529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E52D5B5183D265A00F0B529 /* Build configuration list for PBXLegacyTarget "pocketsphinx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E52D5B6183D265A00F0B529 /* Debug */,
+				4E52D5B7183D265A00F0B529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E52D5AE183D265A00F0B529 /* Project object */;
+}
