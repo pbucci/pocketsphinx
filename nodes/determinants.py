@@ -1,2 +1,6 @@
 #!/usr/bin/env python
-determinants = ["a","the","one","some","two"]
+determinants = {
+	"one"	: ["one","a","the"],
+	"some"	: ["some"],
+	"two"	: ["two"]
+}

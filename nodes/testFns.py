@@ -23,89 +23,56 @@ class DictionaryHandler:
 				for o in self.objects:
 					self.corpus.append(s + " " + o)
 
-	def parseTest(self,string):
-		return str.split(string)[2]
-
-	def getVerb(self,string):
-		s = str.split(str.lower(string))
-		for w in s:
-			print("Checking " + w)
-			for i in verbs:
-				if (i == w):
-					return "Verb is " + w
-
-	def checkIntents(self,string):
+	# Checks a whole sentence for first value in a
+	# list of values for each key in a dictionary,
+	# returns a tuple of key and the rest of the string
+	def checkDictionary(self,string,dictionary):
 		strings = string.lower().split()
 		strings.reverse()
 		returnStrings = []
-		for st in strings:
-			for (intent,synonyms) in self.intents.iteritems():
-				for s in synonyms:
-					if (st == s):
-						return intent," ".join(returnStrings)
-			returnStrings.insert(0,st)
+		for s in strings:
+			for (key,values) in dictionary.iteritems():
+				for v in values:
+					if (s == v):
+						return key," ".join(returnStrings)
+			returnStrings.insert(0,s)
+		return "none", " ".join(returnStrings)
 
-	def checkIdentifiers(self,string):
-		strings = string.lower().split()
-		for i in self.identifiers:
-			if (strings[0] == i):
-				strings.pop(0)
-				return i," ".join(strings)
-
-	def checkDeterminants(self,string):
-		strings = string.lower().split()
-		for d in self.determinants:
-			if (strings[0] == d):
-				strings.pop(0)
-				return d, " ".join(strings)
-
-	def checkObjects(self,string):
-		strings = string.lower().split()
-		for o in self.objects:
-			if (strings[0] == o):
-				strings.pop(0)
-				return o, " ".join(strings)
-
+	# Checks the first word of string against a list
+	# Returns a tuple of the word and the rest of the
+	# string if found, otherwise, the first element
+	# of the tuple is "None"
 	def checkList(self,string,list):
 		strings = string.lower().split()
 		for l in list:
 			if (strings[0] == l):
 				strings.pop(0)
 				return l, " ".join(strings)
+		return "none"," ".join(strings)
+
+	# Calls word parsing functions to classify each word
+	def parseSentence(self,string):
+		intent	= self.checkDictionary(string,self.intents)
+		id		= self.checkList(intent[1],self.identifiers)
+		det		= self.checkDictionary(id[1],self.determinants)
+		object	= self.checkList(det[1],self.objects)
+		return intent[0],id[0],det[0],object[0]
 
 
-# Hello world for testing
-class HelloWorld:
-	def world(self):
-		sys.stdout.write("Hello, world!\n")
-		sys.stdout.flush()
-
-	def main(self):
-		self.world()
-
-# Regex tests
-class RegexTests:
-	def findCoke(self,string):
-		return re.match(re.compile(regex), string)
-
-	def findFlex(self,string,regex):
-		r = ".*"
-		reg = r + regex + r
-		return re.match(re.compile(reg),string)
+	def makeMessage(self,string):
+		s = self.parseSentence(string)
+		i = "Intent		: " + s[0] + "\n"
+		o = "Object		: " + s[3] + "\n"
+		r = "Recipient	: " + s[1] + "\n"
+		c = "Count		: " + s[2] + "\n"
+		return i + o + r + c
 
 # Main function
 if __name__ == "__main__":
 	s = DictionaryHandler()
-	print(s.checkIntents("GO AND GET ME A SODA"))
-	print(s.checkIntents("I WOULD LIKE YOU TO PLEASE GO AND GET ME A SODA"))
-	print(s.checkIdentifiers("ME A SODA"))
-	print(s.checkDeterminants("A SODA"))
-	print(s.checkObjects("SODA POP"))
-	print(s.checkIdentifiers("HALT"))
-	print("\nFlex Tests:\n")
-	print(s.checkList("ME A SODA",s.identifiers))
-	print(s.checkList("A SODA",s.determinants))
-	print(s.checkList("SODA POP",s.objects))
+	print(s.makeMessage("I WOULD LIKE YOU TO PLEASE GO AND GET ME A SODA"))
+	print(s.makeMessage("CAN YOU GET DAVID A SODA PLEASE"))
+	print(s.makeMessage("IS THERE ANY CHANCE THAT YOU CAN FIND PAUL SOME PEPSI"))
 
 
 # Notes for phrase parsing

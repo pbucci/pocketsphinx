@@ -1,2 +1,2 @@
 #!/usr/bin/env python
-identifiers = ["me","Paul","David"]
+identifiers = ["me","paul","david"]
