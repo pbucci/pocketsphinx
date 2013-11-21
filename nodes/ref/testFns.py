@@ -1,28 +1,17 @@
 #!/usr/bin/env python
 import sys
 import re
-
-# Import dummy data
 import intentmap
 import objectlist
-import identifiers
-import determinants
+import corpus
 
-# Dictionary generation and management
-class DictionaryHandler:
-	def __init__(self):
-		self.intents = intentmap.intents
-		self.objects = objectlist.objects
-		self.identifiers = identifiers.identifiers
-		self.determinants = determinants.determinants
-		self.corpus = []
+# Import dummy data
+intents = intentmap.intents
+objects = objectlist.objects
+corpus = corpus.corpus
 
-	def generateCorpus(self):
-		for (intents,synonyms) in self.intents.iteritems():
-			for s in synonyms:
-				for o in self.objects:
-					self.corpus.append(s + " " + o)
-
+# VP finder
+class SentenceParser:
 	def parseTest(self,string):
 		return str.split(string)[2]
 
@@ -35,44 +24,12 @@ class DictionaryHandler:
 					return "Verb is " + w
 
 	def checkIntents(self,string):
-		strings = string.lower().split()
-		strings.reverse()
-		returnStrings = []
+		strings = str.split(str.lower(string))
 		for st in strings:
-			for (intent,synonyms) in self.intents.iteritems():
+			for (intent,synonyms) in intents.iteritems():
 				for s in synonyms:
 					if (st == s):
-						return intent," ".join(returnStrings)
-			returnStrings.insert(0,st)
-
-	def checkIdentifiers(self,string):
-		strings = string.lower().split()
-		for i in self.identifiers:
-			if (strings[0] == i):
-				strings.pop(0)
-				return i," ".join(strings)
-
-	def checkDeterminants(self,string):
-		strings = string.lower().split()
-		for d in self.determinants:
-			if (strings[0] == d):
-				strings.pop(0)
-				return d, " ".join(strings)
-
-	def checkObjects(self,string):
-		strings = string.lower().split()
-		for o in self.objects:
-			if (strings[0] == o):
-				strings.pop(0)
-				return o, " ".join(strings)
-
-	def checkList(self,string,list):
-		strings = string.lower().split()
-		for l in list:
-			if (strings[0] == l):
-				strings.pop(0)
-				return l, " ".join(strings)
-
+						return intent
 
 # Hello world for testing
 class HelloWorld:
@@ -95,20 +52,23 @@ class RegexTests:
 
 # Main function
 if __name__ == "__main__":
-	s = DictionaryHandler()
-	print(s.checkIntents("GO AND GET ME A SODA"))
-	print(s.checkIntents("I WOULD LIKE YOU TO PLEASE GO AND GET ME A SODA"))
-	print(s.checkIdentifiers("ME A SODA"))
-	print(s.checkDeterminants("A SODA"))
-	print(s.checkObjects("SODA POP"))
-	print(s.checkIdentifiers("HALT"))
-	print("\nFlex Tests:\n")
-	print(s.checkList("ME A SODA",s.identifiers))
-	print(s.checkList("A SODA",s.determinants))
-	print(s.checkList("SODA POP",s.objects))
-
+	hd = HelloWorld()
+	hd.main()
+	r = RegexTests()
+	s = SentenceParser();
+	for w in strings:
+		print(r.findCoke(w))
+	for w in strings:
+		for n in nouns:
+			print(r.findFlex(w,n))
+	print(s.parseTest("THIS IS A SENTENCE"))
+	print(s.getVerb("PLEASE GO AND GET ME A COKE"))
+	print(s.checkIntents("PLEASE GO AND GET ME A COKE"))
+	print(s.checkIntents("PLEASE BRING ME A COKE"))
+	print(s.checkIntents("RUN AROUND AND THEN HALT"))
 
 # Notes for phrase parsing
+
 """ 
 The structure of a sentence as we are attempting to understand it will be as such:
 

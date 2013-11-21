@@ -24,14 +24,16 @@
 		4E52D5C8183D27EE00F0B529 /* voice_cmd.launch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = voice_cmd.launch; sourceTree = "<group>"; };
 		4E52D5C9183D27EE00F0B529 /* voice_cmd.lm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = voice_cmd.lm; sourceTree = "<group>"; };
 		4E52D5CB183D27EE00F0B529 /* intentmap.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = intentmap.py; sourceTree = "<group>"; };
-		4E52D5CC183D27EE00F0B529 /* intentmap.pyc */ = {isa = PBXFileReference; lastKnownFileType = file; path = intentmap.pyc; sourceTree = "<group>"; };
-		4E52D5CD183D27EE00F0B529 /* pirobot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pirobot.py; sourceTree = "<group>"; };
 		4E52D5CE183D27EE00F0B529 /* recognizer.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = recognizer.py; sourceTree = "<group>"; };
-		4E52D5CF183D27EE00F0B529 /* testFns.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = testFns.py; sourceTree = "<group>"; };
 		4E52D5D0183D27EE00F0B529 /* thunderbots.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = thunderbots.py; sourceTree = "<group>"; };
-		4E52D5D1183D27EE00F0B529 /* voice_cmd_vel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = voice_cmd_vel.py; sourceTree = "<group>"; };
 		4E52D5D2183D27EE00F0B529 /* package.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = package.xml; sourceTree = "<group>"; };
 		4E52D5D3183D27EE00F0B529 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		4E52D5D7183D2A4900F0B529 /* objectlist.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = objectlist.py; sourceTree = "<group>"; };
+		4E52D5D9183D2B0100F0B529 /* pirobot.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pirobot.py; sourceTree = "<group>"; };
+		4E52D5DB183D2B0100F0B529 /* voice_cmd_vel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = voice_cmd_vel.py; sourceTree = "<group>"; };
+		4E52D5DC183D2B4800F0B529 /* testFns.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = testFns.py; sourceTree = "<group>"; };
+		4EF98457183DF90E00A634AB /* identifiers.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = identifiers.py; sourceTree = "<group>"; };
+		4EF98458183DFAC900A634AB /* determinants.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = determinants.py; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -71,15 +73,25 @@
 		4E52D5CA183D27EE00F0B529 /* nodes */ = {
 			isa = PBXGroup;
 			children = (
+				4E52D5D8183D2B0100F0B529 /* ref */,
+				4E52D5D7183D2A4900F0B529 /* objectlist.py */,
 				4E52D5CB183D27EE00F0B529 /* intentmap.py */,
-				4E52D5CC183D27EE00F0B529 /* intentmap.pyc */,
-				4E52D5CD183D27EE00F0B529 /* pirobot.py */,
+				4E52D5DC183D2B4800F0B529 /* testFns.py */,
+				4EF98457183DF90E00A634AB /* identifiers.py */,
 				4E52D5CE183D27EE00F0B529 /* recognizer.py */,
-				4E52D5CF183D27EE00F0B529 /* testFns.py */,
 				4E52D5D0183D27EE00F0B529 /* thunderbots.py */,
-				4E52D5D1183D27EE00F0B529 /* voice_cmd_vel.py */,
+				4EF98458183DFAC900A634AB /* determinants.py */,
 			);
 			path = nodes;
+			sourceTree = "<group>";
+		};
+		4E52D5D8183D2B0100F0B529 /* ref */ = {
+			isa = PBXGroup;
+			children = (
+				4E52D5D9183D2B0100F0B529 /* pirobot.py */,
+				4E52D5DB183D2B0100F0B529 /* voice_cmd_vel.py */,
+			);
+			path = ref;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
